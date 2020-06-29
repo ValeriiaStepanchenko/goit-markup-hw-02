@@ -1,2 +1,2 @@
-# goit-markup-hw-02
-New repository for home task #2
+# goit-markup-hw-01
+Home task #1
