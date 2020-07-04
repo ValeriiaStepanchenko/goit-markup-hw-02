@@ -27,6 +27,7 @@ color: #F5F4FA;
     --hero-main-color: #ffffff;
     --direction-link-color:#ffffff;
     --hover-color: #2196F3;
+    --hover-filter-color: #ffffff;
     --title-color: #212121;
     --p-text-color:#757575;
 }
@@ -41,7 +42,7 @@ body{
 .list{
     list-style: none;
 }
-.link{
+a{
     text-decoration: none;
 }
 address{
@@ -75,18 +76,21 @@ letter-spacing: 0.02em;
 ul .navigation-link{
     color: var(--title-color);
 }
+ul .current{
+    color: #2196F3;
+}
 
 ul .navigation-link:hover,
 ul .navigation-link:focus{
     color: var(--hover-color);
 }
 /* Address-link */
-ul .header-mail.link,
-ul .header-tel.link{
+ul .header-mail,
+ul .header-tel{
     color: var(--p-text-color);
 }
-ul .header-mail.link:hover,
-ul .header-tel.link:hover{
+ul .header-mail:hover,
+ul .header-tel:hover{
     color: var(--hover-color);
 }
                         /* MAIN */
@@ -201,4 +205,40 @@ ul .footer-address-link:focus{
 }
 b{
     color: var(--direction-link-color);
+}
+
+                            /* PORTFOLIO PAGE */
+/* MAIN */
+/* filter-list */
+.filter-btn{
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--title-color);
+background-color: #F5F4FA;
+}
+.filter-btn:hover,
+.filter-btn:focus{
+    color: var(--hover-filter-color);
+    background-color: var(--hover-color);
+}
+.portfolio-list-title{
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--title-color);
+}
+.title-description{
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;    
+    color: var(--p-text-color); 
+}
+.additional-description{
+font-size: 18px;
+line-height: 1.56;
+letter-spacing: 0.03em;
+color: var(--hover-filter-color);
 }
